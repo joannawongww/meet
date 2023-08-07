@@ -1,6 +1,11 @@
 # Meet App  
 ## Project description  
+Building a serverless, progressive web application with React using TDD technique.  
 App will allow users to see a list of events hosted in various cities.  
+  
+Can use serverless functions for real-time data processing, user authentication, event notifications.  
+App able to scale resources according to user demand.  
+Serverless: Easy to scale, cost-effective (no cost for idle time), always available and no backend maintenance required.  
 
 ## Features of app  
 1) Filter events by city  
