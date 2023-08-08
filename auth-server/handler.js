@@ -30,3 +30,36 @@ return {
     }),
 }
 }
+
+module.exports.getAccessToken = async (event) => {
+    // decode authorisation code from URL query
+    const code = decodeURIComponent(`${event.pathParameters.code}`)
+
+    return new Promise((resolve, reject) => {
+        // exchange autho code for access token with a callback after exchange
+        // callback is arrow function with results as parameters: error and response
+
+        oAuth2Client.getToken(code, (error, response) => {
+            if (error) {
+                return reject(error);
+            }
+            return resolve(response);
+        })
+    }).then((results) => {
+        //respond with OAuth token
+        return {
+            statusCode: 200,
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Credentials': true,
+            },
+            body: JSON.stringify(results),
+        }
+    }).catch((error) => {
+        // handle error
+        return {
+            statusCode: 500,
+            body: JSON.stringify(error),
+        }
+    })
+}
