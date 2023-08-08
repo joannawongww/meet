@@ -25,6 +25,10 @@ provider:
   runtime: nodejs18.x
   region: eu-central-1
   timeout: 30 # optional, in seconds, default is 6
+  environment:
+    CLIENT_ID: ${file(config.json):CLIENT_ID}
+    CLIENT_SECRET: ${file(config.json):CLIENT_SECRET}
+    CALENDAR_ID: ${file(config.json):CALENDAR_ID}
 
 # you can overwrite defaults here
 #  stage: dev
