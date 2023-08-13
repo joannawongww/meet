@@ -14,6 +14,7 @@ describe('<Event /> component', () => {
     test('has event title', () => {
         const title = EventComponent.queryByText(mockEvent.summary);
         expect(title).toBeInTheDocument();
+    })
 
     test('has events time', () => {
         const time = EventComponent.queryByText(mockEvent.created);
