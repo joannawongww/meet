@@ -1,5 +1,6 @@
 import EventList from './components/EventList';
 import CitySearch from './components/CitySearch'
+import NumberOfEvents from './components/NumberOfEvents'
 import './App.css';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <div className="App">
       <CitySearch />
       <EventList />
-      
+      <NumberOfEvents />
     </div>
   );
 }
