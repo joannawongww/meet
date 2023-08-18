@@ -8,7 +8,7 @@ const Event = ({ event }) => {
             <h3>{event.summary}</h3>
             <p>{event.location}</p>
             <p>{new Date(event.created).toUTCString()}</p>
-            <button
+            <button 
             onClick = { () => {
                 setShowDetails(!showDetails);
             }}
