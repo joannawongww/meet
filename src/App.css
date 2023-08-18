@@ -2,10 +2,16 @@
 .App {
   text-align: center;
   padding: 2% 5%;
+  color: #34495e;
 }
 
 .App * {
   box-sizing: border-box;
+}
+
+.title {
+  text-align: left;
+  color: #5e4934;
 }
 
 ul {
@@ -69,7 +75,7 @@ input[type="number"] {
 }
 
 .event {
-  padding: 10px 10px 35px;
+  padding: 10px 10px 20px;
   margin-bottom: 10px;
   text-align: left;
   border: 1px solid #ccc;
@@ -78,11 +84,9 @@ input[type="number"] {
 }
 
 .details-btn {
-  position: absolute;
+  margin: 10px 0px;
   right: 5px;
-  bottom: 5px;
   padding: 5px 8px;
-  border-radius: 4px;
   outline: none;
   cursor: pointer;
 }
