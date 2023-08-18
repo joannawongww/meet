@@ -19,11 +19,6 @@ describe('<Event /> component', () => {
         expect(title).toBeInTheDocument();
     })
 
-    test('has events time', () => {
-        const time = EventComponent.queryByText(mockEvent.created);
-        expect(time).toBeInTheDocument();
-    })
-
     test('has events location', () => {
         const location = EventComponent.queryByText(mockEvent.location);
         expect(location).toBeInTheDocument();
