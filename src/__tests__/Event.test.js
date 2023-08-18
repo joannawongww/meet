@@ -1,3 +1,6 @@
+/* eslint-disable testing-library/no-render-in-setup */
+/* eslint-disable testing-library/no-node-access */
+/* eslint-disable testing-library/prefer-screen-queries */
 import { render } from "@testing-library/react"
 import Event from "../components/Event";
 import mockData from "../mock-data";

@@ -7,6 +7,7 @@ const NumberOfEvents = ( {eventNumber, onEventNumberChange }) => {
     
     return (
         <div id="number-of-events">
+            <b>Number of Events: </b>
             <input 
             type= "text"
             defaultValue="32"
