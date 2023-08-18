@@ -76,6 +76,7 @@ describe('<CitySearch /> component', () => {
         const BerlinGermanySuggestion = CitySearchComponent.queryAllByRole('listitem')[0];
 
         await user.click(BerlinGermanySuggestion);
+        
         expect(cityTextBox).toHaveValue(BerlinGermanySuggestion.textContent);
       });
 

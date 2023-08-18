@@ -25,6 +25,7 @@ describe('<NumberOfEvents /> component', () => {
         const handleEventNumberChange = jest.fn();
         NumberOfEventsComponent.rerender(<NumberOfEvents 
             onEventNumberChange={handleEventNumberChange}
+            setCurrentNOE={()=>{}}
             />)
         const numberTextBox = NumberOfEventsComponent.queryByRole("textbox");
         await userEvent.type(numberTextBox, "{backspace}{backspace}10");

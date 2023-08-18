@@ -1,8 +1,9 @@
 import React from "react";
 
-const NumberOfEvents = ( {eventNumber, onEventNumberChange }) => {
-    const handleInputChanged = (value) => {
-        onEventNumberChange(value)
+const NumberOfEvents = ( { setCurrentNOE }) => {
+    const handleInputChanged = (event) => {
+        const value = event.target.value;
+        setCurrentNOE(value)
     }
     
     return (
@@ -13,8 +14,7 @@ const NumberOfEvents = ( {eventNumber, onEventNumberChange }) => {
             defaultValue="32"
             className="textbox"
             placeholder="Enter a number"
-            value={eventNumber}
-            onChange={(e) => handleInputChanged(e.target.value)}
+            onChange={handleInputChanged}
             />
         </div>
     )
