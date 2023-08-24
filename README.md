@@ -36,8 +36,8 @@ THEN: User should see a list of upcoming events in that city
 ## Feature 2: Show/Hide Event details  
 As a user, I should be able to show/hide details of event so that I can see the details of the event I am interested in  
 Scenario 1: An event element is collapsed by default  
-GIVEN: User typed a city at home page  
-WHEN: User selected a city to display events  
+GIVEN: User is at main page
+WHEN: User opens app
 THEN: Users should see a list of events with details collapsed  
   
 Scenario 2: User can expand an event to see details  
