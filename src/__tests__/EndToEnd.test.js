@@ -1,5 +1,6 @@
 import puppeteer from 'puppeteer';
 
+//feature 2//
 describe('show/hide an event details', () => {
 
     let browser;
@@ -36,3 +37,4 @@ describe('show/hide an event details', () => {
         expect(eventDetails).toBeNull();
     })
 })
+//end of feature 2//
