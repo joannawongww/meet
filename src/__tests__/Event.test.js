@@ -49,10 +49,10 @@ describe('<Event /> component', () => {
         const user = userEvent.setup();
         const eventDOM = EventComponent.container.firstChild;
         const button = EventComponent.queryByText('Show Details');
-        await userEvent.click(button);
+        await user.click(button);
 
         const hideButton = EventComponent.queryByText('Hide Details');
-        await userEvent.click(hideButton);
+        await user.click(hideButton);
 
         const details = eventDOM.querySelector('.details');
         expect(details).not.toBeInTheDocument();
