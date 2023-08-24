@@ -47,14 +47,14 @@ WHEN: User opens the app
 THEN: Users should see a list of events with details collapsed
 
 Scenario 2: User can expand an event to see details  
-GIVEN: User at page showing events in the selected city  
+GIVEN: User is at home page  
 WHEN: User click on 'show details' button  
-THEN: User should see more details on the event
+THEN: User should see the event details expanded
 
 Scenario 3: User can collapse an event to hide details  
-GIVEN: User clicked on 'show details' of interested event  
-WHEN: User click on 'hide details'  
-THEN: User should see the event details hidden
+GIVEN: event details are expanded after user clicked 'show details'  
+WHEN: the user click 'hide details' button  
+THEN: the user should see the event details collapsed
 
 ## Feature 3: Specify number of events
 
