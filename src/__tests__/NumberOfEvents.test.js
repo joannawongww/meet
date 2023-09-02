@@ -26,6 +26,7 @@ describe('<NumberOfEvents /> component', () => {
         NumberOfEventsComponent.rerender(<NumberOfEvents 
             onEventNumberChange={handleEventNumberChange}
             setCurrentNOE={()=>{}}
+            setErrorAlert={() => {}}
             />)
         const numberTextBox = NumberOfEventsComponent.queryByRole("textbox");
         await userEvent.type(numberTextBox, "{backspace}{backspace}10");
