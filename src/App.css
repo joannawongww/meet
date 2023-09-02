@@ -93,8 +93,8 @@ input[type="number"] {
 
 .alerts-container {
   position: fixed;
-  top: 0px;
-  left: 20px;
+  top: 100px;
+  right: 50px;
   width: 250px;
   z-index: 1000;
 }
