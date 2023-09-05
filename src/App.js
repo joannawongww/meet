@@ -22,7 +22,7 @@ function App() {
         if (navigator.onLine) {
             setWarningAlert('');
         } else {
-            setWarningAlert("You're currently offline. Events may not be update to date.")
+            setWarningAlert("You're currently offline. Events may not be up-to-date.")
         }
         fetchData();
     }, [currentCity, currentNOE]);
