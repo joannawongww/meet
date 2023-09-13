@@ -1,4 +1,6 @@
-# Meet App
+# Meet App  
+
+Link to the app: [Click here] (https://joannawongww.github.io/meet/ "Meet app")  
 
 ## Project description
 
@@ -8,6 +10,32 @@ App will allow users to see a list of events hosted in various cities.
 Can use serverless functions for real-time data processing, user authentication, event notifications.  
 App able to scale resources according to user demand.  
 Serverless: Easy to scale, cost-effective (no cost for idle time), always available and no backend maintenance required.
+
+# Technologies used  
+
+* Google Calendar API  
+* React
+* React Testing Library
+* BDD
+* Lighthouse
+* TDD  
+* OAuth2  
+* Recharts
+* Jest
+* Jest-cucumber
+* Puppeteer
+
+## Get project running  
+App is hosted on gh-pages.  
+
+Clone the repository using terminal:  
+`code(command git clone https://github.com/joannawongww/meet.git)`  
+  
+Run app: 
+At the project folder, run command at terminal: `code(npm run start)`  
+  
+Run test:  
+At the project folder, run command at terminal: `code(npm run test)`  
 
 ## Features of app
 
@@ -98,6 +126,5 @@ GIVEN: User at home page
 WHEN: User did not select city  
 THEN: User should see a chart showing number of events in each city
 
-# API
 
-Google Calendar API to fetch upcoming events
+
