@@ -25,17 +25,23 @@ Serverless: Easy to scale, cost-effective (no cost for idle time), always availa
 * Jest-cucumber
 * Puppeteer
 
-## Get project running  
+## Get project running using terminal
 App is hosted on gh-pages.  
 
-Clone the repository using terminal:  
-`command git clone https://github.com/joannawongww/meet.git`  
+**Note to replace [PROJECT_FOLDER_NAME] with the name you want**  
+
+Clone git repository:  
+`git clone https://github.com/joannawongww/meet.git [PROJECT_FOLDER_NAME]`  
+`cd [PROJECT_FOLDER_NAME]`
+`npm i` 
   
-Run app: 
-At the project folder, run command at terminal: `npm run start`  
+Run app on localhost:  
+`cd [PROJECT_FOLDER_NAME]`
+`npm run start`  
   
-Run test:  
-At the project folder, run command at terminal: `npm run test`  
+Run test:    
+`cd [PROJECT_FOLDER_NAME]`  
+`npm run start`  
 
 ## Features of app
 
