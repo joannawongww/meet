@@ -1,6 +1,6 @@
 # Meet App  
 
-Link to the app: [Click here] (https://joannawongww.github.io/meet/ "Meet app")  
+Link to the app: https://joannawongww.github.io/meet/ 
 
 ## Project description
 
@@ -29,13 +29,13 @@ Serverless: Easy to scale, cost-effective (no cost for idle time), always availa
 App is hosted on gh-pages.  
 
 Clone the repository using terminal:  
-`code(command git clone https://github.com/joannawongww/meet.git)`  
+`command git clone https://github.com/joannawongww/meet.git`  
   
 Run app: 
-At the project folder, run command at terminal: `code(npm run start)`  
+At the project folder, run command at terminal: `npm run start`  
   
 Run test:  
-At the project folder, run command at terminal: `code(npm run test)`  
+At the project folder, run command at terminal: `npm run test`  
 
 ## Features of app
 
